@@ -1,0 +1,153 @@
+*{box-sizing: border-box;}
+body{margin: 0;font-family: Arial;}
+
+
+/*======================*/
+/* HEADER STYLING */
+/*======================*/
+
+header
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 20px 0 20px;
+  height: 10vh;
+  align-items: flex-start;
+}
+
+header a, footer a
+{
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+}
+
+header a:hover, footer a:hover
+{
+  text-decoration: underline;
+}
+
+header div
+{
+  display: flex;
+  align-items: center;
+}
+.kleinesBild
+{
+  display: flex;
+  width: 32px;
+  margin: 0 15px;
+  padding: 7px;
+  border-radius: 15px;
+}
+.kleinesBild:hover
+{
+  background-color: #D9D9D9;
+}
+
+.kleinesBild img
+{
+  width: 100%;
+}
+
+
+/*======================*/
+/* MAIN STYLING */
+/*======================*/
+main
+{
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main img
+{
+  width: 300px;
+}
+
+.sucheContainer
+{
+  display: flex;
+  border: 1px solid #E2E2E2;
+  width: 600px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.sucheContainer div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.sucheContainer div img
+{
+  height: 40%;
+  width: auto;
+}
+.sucheContainer input
+{
+  width: 80%;
+  outline: none;
+  border: none;
+  font-size: 19px;
+}
+.sucheContainer:hover
+{
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.23);
+}
+
+
+.buttonContainer
+{
+  display: flex;
+  margin-bottom: 35px;
+}
+.buttonContainer input
+{
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  padding: 11px 18px;
+  margin: 0 10px;
+  font-size: 17px;
+  background-color: #F1F1F1;
+  border-radius: 5px;
+}
+.buttonContainer input:hover
+{
+  border: 1px solid #C3C3C3;
+}
+
+
+
+/*======================*/
+/* FOOTER STYLING */
+/*======================*/
+footer
+{
+  display: flex;
+  height: 10vh;
+  background-color: #E9E9E9;
+  flex-direction: column;
+}
+.zeileOben, .zeileUnten
+{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+.zeileOben
+{
+  border-bottom: 1px solid #D1D1D1;
+}
+.zeileUnten
+{
+  justify-content: space-between;
+}
